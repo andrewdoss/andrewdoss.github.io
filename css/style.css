@@ -1,0 +1,291 @@
+@import url("css_reset.css");
+
+body {
+  background-color: #ffffff;
+  font: 16px Roboto, sans-serif;
+  color: #000000;
+  max-width: 1080px;
+  line-height: 1.5em;
+}
+
+main {
+  margin: 0px 20px;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: normal;
+}
+
+main h1 {
+  border-bottom: #dddddd solid 1px;
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h1 {
+  margin-bottom: 1.0em;
+}
+
+article {
+  margin: 3em 0 6em 0;
+}
+
+#skills h3 {
+  font-weight: bold;
+}
+
+#programming h3 {
+  font-weight: bold;
+}
+
+h2, h3, h4, h5 {
+  margin-bottom: 0.5em;
+}
+
+nav {
+  border-bottom: #dddddd solid 1px;
+  padding: 20px 10px;
+  font-size: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  row-gap: 1.0em;
+}
+
+nav ul {
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 8px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav a:hover {
+  color: #018ef5;
+}
+
+#name {
+  margin: auto;
+}
+
+.call-to-action {
+  color: #ffffff;
+  background: #018ef5;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.call-to-action:hover {
+  background-color: #018ef5;
+  border-color: #018ef5;
+  color: #ffffff;
+}
+
+main a {
+  text-decoration: none;
+  color: #018ef5;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+ul.bullet {
+  margin-left: 2em;
+  list-style-position: outside;
+  list-style-type: disc;
+  text-align: left;
+  line-height: 1.2em;;
+}
+
+ul.bullet > li {
+  margin-bottom: 0.5em
+}
+
+#about > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "bio bio"
+    "skills programming"
+    "headshot headshot";
+}
+
+#about > div img {
+  width: 200px;
+  display: block;
+  margin: 20px auto;
+}
+
+#bio {
+  grid-area: bio;
+}
+
+#headshot {
+  grid-area: headshot;
+}
+
+#skills {
+  grid-area: skills;
+}
+
+#programming {
+  grid-area: programming;
+}
+
+article > div {
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+ul.tile li {
+  background-color: #ffffff;
+  color: #000000;
+  margin: 20px 0;
+}
+
+ul.tile li a > p {
+  margin: 0;
+}
+
+ul.tile li > p {
+  margin: 0 0 0 10px;
+  font-size: 16px;
+}
+
+ul.tile li a {
+  display: block;
+  padding: 20px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+ul.tile li p a {
+  display: inline;
+  background-color: #ffffff;
+  color: #018ef5;
+  padding: 0;
+}
+
+ul.tile li p a:hover {
+  text-decoration: underline;
+  background-color: #ffffffff;
+}
+
+ul.tile li > a:hover {
+  text-decoration: none;
+  background-color: #018ef533;
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+#contact a {
+  display: block;
+  margin: auto;
+  width: 80px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #eeeeee;
+  padding: 0 50px;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    margin: 0 50px;
+  }
+
+  nav {
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  nav {
+    padding: 20px 50px;
+  }
+
+  #about > div {
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "bio bio headshot"
+      "skills programming .";
+    column-gap: 40px;
+  }
+
+  #about > div img {
+    width: 100%;
+    margin: 0;
+  }
+
+  nav {
+    grid-template-columns: 0.33fr 0.67fr;
+    grid-template-rows: auto;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  #name {
+    margin: 0;
+  }
+
+  main {
+    margin: 0px 100px;
+  }
+
+  article > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+}

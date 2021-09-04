@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Andrew Doss's Personal Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/favicon/site.webmanifest">    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <section id="name">Andrew Doss</section>
+        <section id="nav-list">
+          <ul>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#work">Work</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a target = "_blank" class="call-to-action" href="static/2021_Andrew_Doss_Resume.pdf" download="resume-download">Resume</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <article id="about">
+        <h1>About</h1>
+        <div>
+          <section id="bio">
+            <p>I currently work as a data scientist at <a target="_blank"  href="https://bit.io">bit.io</a>, an early-stage, venture-backed SaaS startup where I split my time between product and growth analytics, tool development, and content marketing.</p>
+            <p>Prior to bit.io, I worked in the core advanced analytics team at a <a target="_blank"  href="https://en.wikipedia.org/wiki/Paccar">large automotive enterprise</a>, where I deployed solutions for problems ranging from warehouse optimization, to vehicle fleet reliability, to dynamic pricing.</p>
+            <p>Before pivoting into tech, I worked as an <a target="_blank"  href="https://www.boeing.com/">aerospace propulsion engineer</a>. I started as a fluid dynamicist and later led the analytical aspects of the development of several novel aircraft systems that are in use today.</p>
+          </section>
+          <section id="headshot">
+            <img src="images/about_profile.jpg" alt="Profile picture for Andrew Doss">
+          </section>
+          <section id="skills">
+            <h3>Skills</h3>
+            <ul class="bullet">
+              <li>Software/Data Engineering</li>
+              <li>Machine Learning</li>
+              <li>Data Analysis & Visualization</li>
+            </ul>
+          </section>
+          <section id="programming">
+            <h3>Programming</h3>
+            <ul class="bullet">
+              <li>Python (NumPy, pandas)</li>
+              <li>SQL (Postgres, Snowflake)</li>
+              <li>HTML, CSS, JavaScript (node)</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+      <article id="work">
+        <h1>Work</h1>
+        <p>My largest projects have all been internal work for employers. I share some of the highlights in my <a target = "_blank" class = "highlight" href="static/2021_Andrew_Doss_Resume.pdf" download="resume-download">resume</a>. I also have some public writings, talks, and repos linked below.</p>
+        <div>
+          <section id="engineering">
+            <h3>Engineering</h3>
+            <ul class=tile>
+              <li>
+                <a target="_blank" href="https://github.com/bitdotioinc/air-quality-logger">
+                    <h4>Logging IoT data</h4>
+                    <p>A home air quality monitor using Raspberry Pi, Python and a cloud Postgres database.</p>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://innerjoin.bit.io/making-a-simple-data-pipeline-part-1-the-etl-pattern-7ea52c0f3579">
+                    <h4>Making a Simple Data Pipeline Part 1: The ETL Pattern</h4>
+                    <p>Schedule Python and SQL scripts to keep your dataset clean and up-to-date in a Postgres database.</p>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://innerjoin.bit.io/making-a-simple-data-pipeline-part-2-scheduling-etl-and-post-load-transformations-3e8517c59eab">
+                    <h4>Making a Simple Data Pipeline Part 2: Automating ETL</h4>
+                    <p>Schedule Python and SQL scripts to keep your dataset clean and up-to-date in a Postgres database.</p>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/andrewdoss/algorithms_illuminated">
+                    <h4>Algorithms Illuminated</h4>
+                    <p>Python implementations and tests for all data structures and algorithms from Tim Roughgarden's Algorithms Illuminated series.</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section id="machine-learning">
+            <h3>Machine Learning</h3>
+            <ul class="tile">
+              <li>
+                <a target="_blank" href="https://innerjoin.bit.io/the-nfl-combine-in-two-dimensions-95ba79e3470d">
+                    <h4>The NFL Combine in Two Dimensions</h4>
+                    <p>Exploring data with Principal Component Analysis.</p>
+                </a>
+                <p class="highlight">Organically featured in <a class="highlight" href="http://weekly.sfdata.io/issues/sf-data-weekly-the-nfl-combine-data-aquariums-and-being-analytics-driven-651203">SF Data Weekly</a>.</p>
+              </li>
+              <li>
+                <a target="_blank" href="https://innerjoin.bit.io/labeling-a-shared-dataset-of-r-wallstreetbets-comments-b147202789d7">
+                    <h4>Labeling a Shared Dataset of r/wallstreetbets Comments</h4>
+                    <p>A simple approach to team data labeling.</p>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="./static/building_a_predictive_model.html">
+                    <h4>Building a Predictive Model</h4>
+                    <p>Talk on predictive modeling fundamentals at PACCAR Analytics-Cloud-Data Conference.</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section id="data-analysis">
+            <h3>Data Analysis</h3>
+            <ul class="tile">
+              <li>
+                <a target="_blank" href="https://innerjoin.bit.io/we-might-be-wrong-about-whats-causing-pandemic-drinking-59ef3d1dba73">
+                    <h4>We Might be Wrong About What's Causing Pandemic Drinking</h4>
+                    <p>An analysis of pandemic unemployment and drinking in Iowa.</p>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://innerjoin.bit.io/what-makes-simone-biles-the-goat-b1433582e4b">
+                    <h4>What Makes Simone Biles the GOAT?</h4>
+                    <p>An analysis of elite women's all-around gymnastics scores.</p>
+                </a>
+                <p class="highlight">Organically featured in <a class ="highlight" href="https://www.chartr.co/newsletters/2021/7/28/how-apple-makes-its-money">chartr</a>.</p>
+              </li>
+              <li>
+                <a target="_blank" href="https://innerjoin.bit.io/is-west-coast-air-getting-dirtier-3e33a733a2f8">
+                    <h4>Is West Coast Air Getting Dirtier?</h4>
+                    <p>Analyzing particulate matter trends in three major Pacific metros.</p>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://innerjoin.bit.io/seattles-summer-reading-list-7424797b9b97">
+                    <h4>Seattle's Summer Reading List</h4>
+                    <p>Ranking the top summer eBooks and audiobooks using library checkout records.</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </article>
+      <article id="contact">
+        <h1>Contact</h1>
+        <p>I love to hear from people and organizations with interesting problems and technology learners of any level who are looking for help.</p>
+        <a class="call-to-action" href="mailto:andrewjdoss@gmail.com?subject=Hello">Say Hello</a>
+      </article>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="mailto:andrewjdoss@gmail.com"><img src="images/email.png"></a></li>
+        <li><a target="_blank" href="https://github.com/andrewdoss"><img src="images/github.png"></a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/andrew-j-doss/"><img src="images/linkedin.png"></a></li>
+      </ul>
+      <section>&copy; Andrew Doss 2021.</section>
+    </footer>
+  </body>
+</html>
