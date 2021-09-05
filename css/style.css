@@ -249,21 +249,22 @@ footer section {
 }
 
 @media screen and (min-width: 600px) {
+  nav {
+    margin: 0 auto;
+    padding: 20px 50px;
+  }
+  
   main {
     margin: 0 auto;
     padding: 0 50px;
   }
 
-  nav {
-    margin: 0 auto;
-    padding: 20px 50px;
-  }
 }
 
 @media screen and (min-width: 930px) {
   nav {
-    padding: 20px 40px;
     margin: 0 auto;
+    padding: 20px 50px;
   }
 
   main {
