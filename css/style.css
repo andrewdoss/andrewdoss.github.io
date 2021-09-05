@@ -4,13 +4,20 @@ body {
   background-color: #ffffff;
   font: 16px sans-serif;
   color: #000000;
-  max-width: 1080px;
   line-height: 1.5em;
   margin: 0 auto;
 }
 
+header {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px; 
+}
+
 main {
-  margin: 0px 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 p {
@@ -221,7 +228,6 @@ ul.tile li > a:hover {
 
 footer {
   background-color: #eeeeee;
-  padding: 0 50px;
   text-align: center;
 }
 
@@ -230,30 +236,39 @@ footer ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 2em;
+  padding-top: 2.5em;
+  padding-bottom: 0.5em;
 }
 
 footer ul li {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 footer section {
-  padding: 10px 0;
+  padding-bottom: 0.5em;
 }
 
 @media screen and (min-width: 600px) {
   main {
-    margin: 0 50px;
+    margin: 0 auto;
+    padding: 0 50px;
   }
 
   nav {
-    padding: 20px 30px;
+    margin: 0 auto;
+    padding: 20px 50px;
   }
 }
 
 @media screen and (min-width: 930px) {
   nav {
-    padding: 20px 50px;
+    padding: 20px auto;
+    margin: 0 
+  }
+
+  main {
+    margin: 0 auto;
+    padding: 0 100px;
   }
 
   #about > div {
@@ -281,10 +296,6 @@ footer section {
 
   #name {
     margin: 0;
-  }
-
-  main {
-    margin: 0px 100px;
   }
 
   article > div {
