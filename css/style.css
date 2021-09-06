@@ -85,7 +85,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 8px;
+  margin: auto 8px;
 }
 
 nav a {
@@ -103,16 +103,16 @@ nav a:hover {
 
 .call-to-action {
   color: #ffffff;
-  background: #018ef5;
-  border: 2px solid #ffffff;
-  border-radius: 10px;
-  padding: 10px 20px;
+  background-color: #018ef5;
+  margin: 2px 6px;
+  border-radius: 15px;
+  padding: 8px 15px;
   font-size: 18px;
 }
 
 .call-to-action:hover {
-  background-color: #018ef5;
-  border-color: #018ef5;
+  margin: 0 4px;
+  border: 2px solid #018ef5;
   color: #ffffff;
 }
 
@@ -233,18 +233,17 @@ footer {
 footer ul {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
-  padding-top: 2.5em;
-  padding-bottom: 0.5em;
+  padding: 1em 0;
 }
 
 footer ul li {
-  margin: 0 15px;
+  margin: auto 12px;
 }
 
-footer section {
-  padding-bottom: 0.5em;
+footer img {
+  height: 36px;
 }
 
 @media screen and (min-width: 600px) {
