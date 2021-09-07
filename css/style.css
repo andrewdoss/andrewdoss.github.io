@@ -104,16 +104,15 @@ nav a:hover {
 .call-to-action {
   color: #ffffff;
   background-color: #018ef5;
+  border-radius: 10px;
   margin: 2px 6px;
-  border-radius: 15px;
   padding: 8px 15px;
   font-size: 18px;
 }
 
 .call-to-action:hover {
-  margin: 0 4px;
-  border: 2px solid #018ef5;
   color: #ffffff;
+  background-color: #03538d;
 }
 
 main a {
@@ -235,7 +234,7 @@ footer ul {
   flex-direction: row;
   align-items: baseline;
   justify-content: center;
-  padding: 1em 0;
+  padding: 1.25em 0 0.5em 0;
 }
 
 footer ul li {
