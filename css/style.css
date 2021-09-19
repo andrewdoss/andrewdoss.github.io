@@ -49,6 +49,7 @@ h4 {
 
 h1 {
   margin-bottom: 1.0em;
+  text-align: center;
 }
 
 article {
@@ -271,6 +272,10 @@ footer img {
 
   article {
     margin: 3em 100px 6em 100px;
+  }
+
+  h1 {
+    text-align: left;
   }
 
   #about > div {
